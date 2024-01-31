@@ -2,7 +2,7 @@
 
 * Студент: [Наталья Майорова](https://up.htmlacademy.ru/htmlcss/39/user/2461257).
 * Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
-
+* Сайт: [Проект Седона](https://mayorovanatasha.github.io/2461257-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
