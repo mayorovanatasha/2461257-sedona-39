@@ -10,10 +10,10 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <a class="navigation-logo" aria-current="page" href="#">
-          <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
-        </a>
         <nav class="navigation">
+          <a class="navigation-logo" aria-current="page" href="index.html">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -37,15 +37,17 @@
                 <span class="favorite-counter">12</span>
               </a>
             </li>
+            <li class="navigation-user-item">
+              <a class="button header-button dark" href="#">Хочу сюда!</a>
+            </li>
           </ul>
         </nav>
-        <a class="button header-button dark" href="#">Хочу сюда!</a>
       </header>
       <main class="main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <nav class="breadcrumbs">
-            <ol>
+            <ol class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-icon" aria-current="page" href="index.html">
                   <span class="visually-hidden">Ссылка на главную страницу</span>
@@ -113,118 +115,120 @@
             </form>
           </section>
         </header>
-        <section class="inner-products">
-          <h2 class="inner-products-title">Найдено гостиниц: <span>38</span></h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <ul class="view-buttons">
-            <li class="view-buttons-item">
-              <a class="view-button-tile active" href="#">
-                <span class="visually-hidden">Показать плиткой</span>
+        <div class="container-products">
+          <section class="sort-products">
+            <h2 class="sort-products-title">Найдено гостиниц: <span>38</span></h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <ul class="view-buttons">
+              <li class="view-buttons-item">
+                <a class="view-button-tile active" href="#">
+                  <span class="visually-hidden">Показать плиткой</span>
+                </a>
+              </li>
+              <li class="view-buttons-item">
+                <a class="view-button-card" href="#">
+                  <span class="visually-hidden">Показать карточками</span>
+                </a>
+              </li>
+              <li class="view-buttons-item">
+                <a class="view-button-list" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <ul class="product-list">
+            <li class="product-card">
+              <a class="product-card-link" tabindex="-1" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-1.jpg" alt="Звёздное небо">
               </a>
-            </li>
-            <li class="view-buttons-item">
-              <a class="view-button-card" href="#">
-                <span class="visually-hidden">Показать карточками</span>
+              <a class="product-card-link" href="product.html">
+                <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
+              <p class="product-card-type">Гостиница</p>
+              <b class="product-card-price">От 4000 ₽</b>
+              <a class="button product-card-button dark" href="#">подробнее</a>
+              <a class="button product-card-button basic" href="#">в избранное</a>
+              <p class="product-card-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
             </li>
-            <li class="view-buttons-item">
-              <a class="view-button-list" href="#">
-                <span class="visually-hidden">Показать списком</span>
+            <li class="product-card">
+              <a class="product-card-link" tabindex="-1" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-2.jpg" alt="Горы и радуга">
+              </a>
+              <a class="product-card-link" href="product.html">
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <p class="product-card-type">Гостиница</p>
+              <b class="product-card-price">От 5000 ₽</b>
+              <a class="button product-card-button dark" href="#">подробнее</a>
+              <a class="button product-card-button info" href="#">в избранное</a>
+              <p class="product-card-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" tabindex="-1" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-3.jpg" alt="Горы на фоне неба">
+              </a>
+              <a class="product-card-link" href="product.html">
+                <h3 class="product-card-title">Desert Quail Inn</h3>
+              </a>
+              <p class="product-card-type">Гостиница</p>
+              <b class="product-card-price">От 2500 ₽</b>
+              <a class="button product-card-button dark" href="#">подробнее</a>
+              <a class="button product-card-button basic" href="#">в избранное</a>
+              <p class="product-card-stars">
+                <span class="visually-hidden">3 звезды</span>
+              </p>
+              <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" tabindex="-1" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-4.jpg" alt="Горы и ночное звёздное небо">
+              </a>
+              <a class="product-card-link" href="product.html">
+                <h3 class="product-card-title">GreenTree Inn</h3>
+              </a>
+              <p class="product-card-type">Гостиница</p>
+              <b class="product-card-price">От 1500 ₽</b>
+              <a class="button product-card-button dark" href="#">подробнее</a>
+              <a class="button product-card-button basic" href="#">в избранное</a>
+              <p class="product-card-stars">
+                <span class="visually-hidden">2 звезды</span>
+              </p>
+              <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
               </a>
             </li>
           </ul>
-        </section>
-        <ul class="product-list">
-          <li class="product-card">
-            <a class="product-card-link" tabindex="-1" href="product.html">
-              <img class="product-card-image" src="images/hotels/hotel-1.jpg" alt="Звёздное небо">
-            </a>
-            <a class="product-card-link" href="product.html">
-              <h3 class="product-card-title">Amara Resort & Spa</h3>
-            </a>
-            <p class="product-card-type">Гостиница</p>
-            <b class="product-card-price">От 4000 ₽</b>
-            <a class="button product-card-button dark" href="#">подробнее</a>
-            <a class="button product-card-button basic" href="#">в избранное</a>
-            <p class="product-card-stars">
-              <span class="visually-hidden">4 звезды</span>
-            </p>
-            <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" tabindex="-1" href="product.html">
-              <img class="product-card-image" src="images/hotels/hotel-2.jpg" alt="Горы и радуга">
-            </a>
-            <a class="product-card-link" href="product.html">
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
-            </a>
-            <p class="product-card-type">Гостиница</p>
-            <b class="product-card-price">От 5000 ₽</b>
-            <a class="button product-card-button dark" href="#">подробнее</a>
-            <a class="button product-card-button info" href="#">в избранное</a>
-            <p class="product-card-stars">
-              <span class="visually-hidden">4 звезды</span>
-            </p>
-            <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" tabindex="-1" href="product.html">
-              <img class="product-card-image" src="images/hotels/hotel-3.jpg" alt="Горы на фоне неба">
-            </a>
-            <a class="product-card-link" href="product.html">
-              <h3 class="product-card-title">Desert Quail Inn</h3>
-            </a>
-            <p class="product-card-type">Гостиница</p>
-            <b class="product-card-price">От 2500 ₽</b>
-            <a class="button product-card-button dark" href="#">подробнее</a>
-            <a class="button product-card-button basic" href="#">в избранное</a>
-            <p class="product-card-stars">
-              <span class="visually-hidden">3 звезды</span>
-            </p>
-            <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" tabindex="-1" href="product.html">
-              <img class="product-card-image" src="images/hotels/hotel-4.jpg" alt="Горы и ночное звёздное небо">
-            </a>
-            <a class="product-card-link" href="product.html">
-              <h3 class="product-card-title">GreenTree Inn</h3>
-            </a>
-            <p class="product-card-type">Гостиница</p>
-            <b class="product-card-price">От 1500 ₽</b>
-            <a class="button product-card-button dark" href="#">подробнее</a>
-            <a class="button product-card-button basic" href="#">в избранное</a>
-            <p class="product-card-stars">
-              <span class="visually-hidden">2 звезды</span>
-            </p>
-            <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
-            </a>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">4</a>
-          </li>
-          <li class="pagination-item">
-            <span class="pagination-link pagination-more">...</span>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">10</a>
-          </li>
-        </ul>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <span class="pagination-link pagination-current">1</span>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">4</a>
+            </li>
+            <li class="pagination-item">
+              <span class="pagination-link pagination-more">...</span>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">10</a>
+            </li>
+          </ul>
+        </div>
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
