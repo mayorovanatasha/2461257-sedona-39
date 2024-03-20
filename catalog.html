@@ -10,7 +10,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page" href="index.html">
             <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
@@ -44,7 +44,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <nav class="breadcrumbs">
@@ -59,9 +59,9 @@
               </li>
             </ol>
           </nav>
-          <section class="inner-filter-form">
+          <section class="inner-filter-form" data-test="filter" >
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-            <form class="inner-filter" action="https://echo.thmlacademy.ru/" method="get">
+            <form class="inner-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="inner-filter-group">
                 <legend class="inner-filter-title">Инфраструктура:</legend>
                 <ul class="inner-filter-list">
@@ -115,10 +115,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="inner-filter-group">
-                <div class="price">
+              <fieldset class="inner-filter-group price">
+                <legend class="price-range-title">Стоимость, ₽:</legend>
                   <div class="price-range">
-                    <legend class="price-range-title">Стоимость, ₽:</legend>
                     <div class="range-wrapper-inputs">
                       <label class="range-filter-label">
                         <span class="range-label-text">от</span>
@@ -131,10 +130,10 @@
                     </div>
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>
                       </div>
@@ -144,12 +143,11 @@
                     <button class="button button-apply basic" type="submit">Применить</button>
                     <button class="button button-reset colorless" type="reset">Сбросить</button>
                   </div>
-                </div>
               </fieldset>
             </form>
           </section>
         </header>
-        <div class="container-products">
+        <div class="container-products" data-test="catalog">
           <section class="sort-products">
             <h2 class="sort-products-title">Найдено гостиниц: <span>38</span></h2>
             <div class="select-wrapper-control">
@@ -272,7 +270,7 @@
             </li>
           </ul>
         </div>
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -283,8 +281,9 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="social">
+          <h2 class="visually-hidden">Наши страницы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-list-item">
               <a class="social-item-link" href="https://vk.com/htmlacademy">
