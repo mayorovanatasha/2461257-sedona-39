@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
 
   <body>
     <div class="wrapper">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" aria-current="page" href="index.html">
+          <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
           </a>
           <ul class="navigation-list">
@@ -23,7 +23,7 @@
               <a class="navigation-link" href="#">О седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link active" href="#">Гостиницы</a>
+              <a class="navigation-link active" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -50,16 +50,16 @@
           <nav class="breadcrumbs">
             <ol class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-icon" aria-current="page" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-icon" href="index.html">
                   <span class="visually-hidden">Ссылка на главную страницу</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
               </li>
             </ol>
           </nav>
-          <section class="inner-filter-form" data-test="filter" >
+          <section class="inner-filter-form" data-test="filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="inner-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="inner-filter-group">
@@ -117,32 +117,32 @@
               </fieldset>
               <fieldset class="inner-filter-group price">
                 <legend class="price-range-title">Стоимость, ₽:</legend>
-                  <div class="price-range">
-                    <div class="range-wrapper-inputs">
-                      <label class="range-filter-label">
-                        <span class="range-label-text">от</span>
-                        <input class="range-input min-price" type="number" value="0" name="min-price">
-                      </label>
-                      <label class="range-filter-label">
-                        <span class="range-label-text">до</span>
-                        <input class="range-input max-price" type="number" value="9000" name="max-price">
-                      </label>
-                    </div>
-                    <div class="range-scale">
-                      <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min" type="button">
-                          <span class="visually-hidden">Изменить минимальную цену</span>
-                        </button>
-                        <button class="range-toggle toggle-max" type="button">
-                          <span class="visually-hidden">Изменить максимальную цену</span>
-                        </button>
-                      </div>
+                <div class="price-range">
+                  <div class="range-wrapper-inputs">
+                    <label class="range-filter-label">
+                      <span class="range-label-text">от</span>
+                      <input class="range-input min-price" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="range-filter-label">
+                      <span class="range-label-text">до</span>
+                      <input class="range-input max-price" type="number" value="9000" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
                     </div>
                   </div>
-                  <div class="price-wrapper-buttons">
-                    <button class="button button-apply basic" type="submit">Применить</button>
-                    <button class="button button-reset colorless" type="reset">Сбросить</button>
-                  </div>
+                </div>
+                <div class="price-wrapper-buttons">
+                  <button class="button button-apply basic" type="submit">Применить</button>
+                  <button class="button button-reset colorless" type="reset">Сбросить</button>
+                </div>
               </fieldset>
             </form>
           </section>
@@ -177,8 +177,9 @@
           </section>
           <ul class="product-list">
             <li class="product-card">
-              <a class="product-card-link" tabindex="-1" href="product.html">
-                <img class="product-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Звёздное небо">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                  alt="Звёздное небо">
               </a>
               <a class="product-card-link" href="product.html">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -195,8 +196,9 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" tabindex="-1" href="product.html">
-                <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Горы и радуга">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                  alt="Горы и радуга">
               </a>
               <a class="product-card-link" href="product.html">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -213,8 +215,9 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" tabindex="-1" href="product.html">
-                <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Горы на фоне неба">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
+                  alt="Горы на фоне неба">
               </a>
               <a class="product-card-link" href="product.html">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -231,8 +234,9 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" tabindex="-1" href="product.html">
-                <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Горы и ночное звёздное небо">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                  alt="Горы и ночное звёздное небо">
               </a>
               <a class="product-card-link" href="product.html">
                 <h3 class="product-card-title">GreenTree Inn</h3>

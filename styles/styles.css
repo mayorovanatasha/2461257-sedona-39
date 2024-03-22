@@ -420,8 +420,9 @@ img {
 
 .advantages-image {
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   margin: auto;
+  height: 100%;
 }
 
 .basic .advantages-title {
@@ -1305,6 +1306,7 @@ input.range-input[type='number'] {
   align-items: center;
   min-width: 60px;
   height: 60px;
+  padding: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1444,12 +1446,14 @@ input.range-input[type='number'] {
   display: grid;
   grid-template-columns: 137px 440px;
   margin: 0;
-  padding: 0;;
+  padding: 0;
+  ;
   margin-bottom: 23px;
   border: 0;
 }
 
 .form-field-input {
+  position: relative;
   margin: 0;
   padding: 12px 20px;
   font-family: inherit;
@@ -1537,17 +1541,19 @@ input.range-input[type='number'] {
   display: block;
 }
 
-.button-calendar {
+.form-field-group::after {
   position: absolute;
-  top: 15px;
+  display: block;
+  top: 14px;
   right: 20px;
-  background-image: url("../images/icon-calendar.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
   width: 20px;
   height: 20px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/icon-calendar.svg");
+  background-repeat: no-repeat;
   cursor: pointer;
+  content: "";
 }
 
 .button-calendar:hover {
@@ -1717,7 +1723,7 @@ input.range-input[type='number'] {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #000000;
   z-index: 1;
 }
 
@@ -1728,6 +1734,10 @@ input.range-input[type='number'] {
 
 input.counter-input[type='number'] {
   -moz-appearance: textfield;
+}
+
+.counter-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .counter-input:focus {
