@@ -158,6 +158,7 @@
             </li>
           </ul>
           <div class="phone-wrapper">
+            <span class="visually-hidden">Телефон</span>
             <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
@@ -173,28 +174,31 @@
     <div class="modal-container modal-container-close">
       <div class="modal-wrapper">
         <button class="modal-close-button modal-close-icon">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form-field-group">
+            <fieldset class="form-field-group">
+              <legend class="visually-hidden">Добавьте дату заезда.</legend>
               <label class="form-field-label" for="check-in">Дата заезда:</label>
               <input class="form-field-input" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
               <button class="button-calendar" type="button">
                 <span class="visually-hidden">Выбрать дату заезда.</span>
               </button>
               <span class="form-field-message error">Мы не можем отправить вас в прошлое.</span>
-            </div>
-            <div class="form-field-group">
+            </fieldset>
+            <fieldset class="form-field-group">
+              <legend class="visually-hidden">Добавьте дату выезда.</legend>
               <label class="form-field-label" for="check-out">Дата выезда:</label>
               <input class="form-field-input" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023">
               <button class="button-calendar" type="button">
                 <span class="visually-hidden">Выбрать дату выезда.</span>
               </button>
               <span class="form-field-message">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
-            <div class="field-group-counter">
+            </fieldset>
+            <fieldset class="field-group-counter">
+              <legend class="visually-hidden">Укажите количество гостей.</legend>
               <div class="counter">
                 <label class="counter-label" for="counter-one">Взрослые:</label>
                 <button type="button" name="minus" class="minus-button">
@@ -224,7 +228,7 @@
                   <span class="visually-hidden">кнопка плюса</span>
                 </button>
               </div>
-            </div>
+            </fieldset>
             <button class="button modal-form-button basic" type="submit">Найти</button>
           </form>
         </section>
